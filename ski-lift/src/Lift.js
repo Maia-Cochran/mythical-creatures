@@ -19,13 +19,14 @@ class Lift {
     }
   }
   startLift (){
-this.limit -= this.skiers.length
-if (this.skiers.length < this.limit) {
-  this.safetyBar = 'up';
-  return `We still need ${this.limit - this.skiers.length} more skier${needPluralSkier}!`
-    if(this.skiers.length === this.limit) {
-      this.safetyBar = 'down';
-    // } else
+  var sum = this.limit - this.skiers.length
+  if (this.skiers.length === this.limit) {
+    this.safetyBar = 'down';
+  } else if(sum === 1) {
+    return `We still need ${sum} more skier!`
+  } else {
+    return `We still need ${sum} more skiers!`
+      }
     }
   }
 
