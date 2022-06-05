@@ -16,7 +16,7 @@ describe("Snowman", function () {
       buttons: 6,
       snowballs: 3
     }
-
+// console.log(snowmanDetails1.carrots)
     var snowman1 = new Snowman(snowmanDetails1);
     var snowman2 = new Snowman(snowmanDetails2);
 
@@ -42,6 +42,7 @@ describe("Snowman", function () {
     var snowman = new Snowman(snowmanDetails);
 
     assert.equal(snowman.magicHat, false);
+
   });
 
   it('should be able to wear a magic hat', function() {
