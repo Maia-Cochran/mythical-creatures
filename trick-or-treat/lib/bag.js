@@ -3,7 +3,6 @@ class Bag {
     this.empty = true;
     this.count = 0;
     this.candies = [];
-
   }
   fill(nameOfCandy){
     this.candies.push(nameOfCandy);

@@ -13,8 +13,6 @@ class Human {
   }
   gatherMaterials(material, amount){
     this.materials[material] += amount;
-
-console.log(material, amount)
   }
   buildASnowman(){
   var newSnowman = new Snowman(this.materials);

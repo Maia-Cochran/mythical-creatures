@@ -3,7 +3,7 @@ var assert = require('chai').assert;
 
 describe("Material", function() {
 
-  it.skip('should have a name, price per unit, amount, and units', function() {
+  it('should have a name, price per unit, amount, and units', function() {
     var thread = new Material('thread', .25, 8, 'spools');
     var fabric = new Material('fabric', 4, 3, 'yards');
 
@@ -18,13 +18,13 @@ describe("Material", function() {
     assert.equal(fabric.units, 'yards');
   })
 
-  it.skip('should be able to use material', function() {
+  it('should be able to use material', function() {
     var fabric = new Material('fabric', 4, 3, 'yards');
 
     assert.equal(fabric.amount, 3);
 
     var usedFabric = fabric.useMaterial(2);
-
+console.log(fabric.amount)
     assert.equal(fabric.amount, 1);
     assert.equal(usedFabric, `You now have 1 yards of fabric left.`)
   })

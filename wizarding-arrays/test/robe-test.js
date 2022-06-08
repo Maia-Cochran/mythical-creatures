@@ -3,7 +3,7 @@ const Robe = require('../lib/robe');
 
 describe('A wizard\'s robe', () => {
 
-  it.skip('has a lot of pockets and initially all are empty', () => {
+  it('has a lot of pockets and initially all are empty', () => {
     const robe = new Robe();
 
     assert.equal(robe.pockets.length, 10);
@@ -14,7 +14,7 @@ describe('A wizard\'s robe', () => {
     }
   });
 
-  it.skip('can put things in the pockets', () => {
+  it('can put things in the pockets', () => {
     const robe = new Robe();
 
     robe.addToPocket('youth elixir potion');
@@ -22,7 +22,7 @@ describe('A wizard\'s robe', () => {
     assert.equal(robe.pockets[0][0], 'youth elixir potion');
   });
 
-  it.skip('can not have two things in one pocket', () => {
+  it('can not have two things in one pocket', () => {
     const robe = new Robe();
 
     robe.addToPocket('youth elixir potion');

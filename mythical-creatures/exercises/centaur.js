@@ -51,8 +51,3 @@ class Centaur {
 };
 
 module.exports = Centaur;
-
-// } else if(this.layingDown === false && this.standing === false){
-//   this.cranky === false;
-//   shootBow();
-//   return 'Twang!!!'
