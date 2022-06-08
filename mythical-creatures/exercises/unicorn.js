@@ -1,24 +1,39 @@
-class Unicorn {
-  constructor(name, color) {
+class Unicorn{
+  constructor(name, color){
     this.name = name;
-    if (color === undefined) {
-      this.color = 'white';
-    } else {
-      this.color = color;
-    }
+    this.color = color || 'white';
   }
-
-
-isWhite() {
-  if (this.color !== 'white') {
+  isWhite(){
     return false;
-    }
-};
-
-says(words) {
-  return `**;* ${ words } *;**`
   }
-};
-
+  says(stuff){
+    return `**;* ${stuff} *;**`
+  }
+}
 
 module.exports = Unicorn;
+
+// class Unicorn {
+//   constructor(name, color) {
+//     this.name = name;
+//     if (color === undefined) {
+//       this.color = 'white';
+//     } else {
+//       this.color = color;
+//     }
+//   }
+//
+//
+// isWhite() {
+//   if (this.color !== 'white') {
+//     return false;
+//     }
+// };
+//
+// says(words) {
+//   return `**;* ${ words } *;**`
+//   }
+// };
+//
+//
+// module.exports = Unicorn;
