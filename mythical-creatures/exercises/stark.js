@@ -1,7 +1,23 @@
+const Direwolf = require('../exercises/direwolf');
+
 class Stark {
   constructor(starkInfo){
     this.name = starkInfo.name;
-    this.location = starkInfo.area|| 'Winterfell';
+    this.location = starkInfo.area || 'Winterfell';
+    this.safe = false;
+  }
+  sayHouseWords(){
+    if(this.safe === true){
+      return `The North Remembers`
+    } else {
+      return `Winter is Coming`
+    }
+  }
+  callDirewolf(name, location){
+    var direwolf = new Direwolf(name, location);
+    direwolf.home = this.location;
+    direwolf.protect(this)
+    return direwolf
   }
 }
 
