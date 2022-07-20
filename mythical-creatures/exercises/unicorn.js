@@ -13,6 +13,8 @@ class Unicorn{
 
 module.exports = Unicorn;
 
+
+//week2
 // class Unicorn {
 //   constructor(name, color) {
 //     this.name = name;
@@ -34,6 +36,6 @@ module.exports = Unicorn;
 //   return `**;* ${ words } *;**`
 //   }
 // };
-//
-//
-// module.exports = Unicorn;
+
+
+module.exports = Unicorn;

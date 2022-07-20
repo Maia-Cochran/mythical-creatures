@@ -8,11 +8,10 @@ class Dragon {
   greet(){
     return `Hi, ${this.rider}!`
   }
-  eat(){
-    this.hasEaten++
-    if(this.hasEaten > 2){
-      this.hungry = false;
-    }
+  eat() {
+    // for (var i = 0; i = 3; i++) {
+    this.hungry = false;
+    // }
   }
 }
 module.exports = Dragon;
@@ -23,12 +22,12 @@ module.exports = Dragon;
 //     this.ate = 0;
 //     this.hungry = true;
 //     }
-//   eat() {
-//     this.ate ++
-//     if (this.ate > 2) {
-//     this.hungry = false
-//     }
-//   }
+  eat() {
+    this.ate ++
+    if (this.ate > 2) {
+    this.hungry = false
+    }
+  }
 //   greet() {
 //     return `Hi, ${this.rider}!`
 //   }

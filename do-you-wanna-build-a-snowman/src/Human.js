@@ -19,7 +19,7 @@ class Human {
   return newSnowman;
   }
   placeMagicHat(){
-  var snowman = new Snowman(this.materials);
+  var snowman = this.buildASnowman();
   snowman.canWearMagicHat();
   if(snowman.magicHat){
   return 'Woah, this snowman is coming to life!';
@@ -28,5 +28,4 @@ class Human {
     }
   }
 }
-
 module.exports = Human;

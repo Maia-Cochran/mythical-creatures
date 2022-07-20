@@ -24,7 +24,7 @@ describe("Material", function() {
     assert.equal(fabric.amount, 3);
 
     var usedFabric = fabric.useMaterial(2);
-console.log(fabric.amount)
+
     assert.equal(fabric.amount, 1);
     assert.equal(usedFabric, `You now have 1 yards of fabric left.`)
   })

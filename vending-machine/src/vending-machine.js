@@ -1,3 +1,4 @@
+
 class VendingMachine {
   constructor(machineInfo){
     this.id = machineInfo.id;
